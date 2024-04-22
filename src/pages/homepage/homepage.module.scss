@@ -1,0 +1,24 @@
+@import '../../base-style/index.module.scss';
+
+.main {
+    min-height: 100vh;
+    background-color: $bg-slate-200;
+    font-family: Inter;
+    padding: 20vh 0 10vh;
+    box-sizing: border-box;
+
+    .content {
+        width: 75vw;
+        margin: 0 auto;
+        display: flex;
+        gap: 3vw;
+
+        .tickets {
+            width: 50vw;
+            height: fit-content;
+            display: flex;
+            flex-direction: column;
+            gap: 3vh;
+        }
+    }
+}

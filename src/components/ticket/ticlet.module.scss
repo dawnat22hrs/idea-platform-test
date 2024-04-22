@@ -1,0 +1,116 @@
+@import '../../base-style/index.module.scss';
+
+.ticket {
+    width: 50vw;
+    background-color: $white;
+    border-radius: 5px;
+    box-sizing: border-box;
+    border: 1px solid $bg-slate-300;
+    display: flex;
+    align-items: center;
+
+    .buyBlock {
+        cursor: default;
+        height: auto;
+        width: 10vw;
+        padding: 2vw;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        gap: 6vh;
+        border-right: 1px solid $bg-slate-200;
+
+        .title {
+            width: 7vw;
+
+            h3 {
+                margin: 0;
+                color: $blue-800;
+            }
+        }
+
+        .btn {
+            width: 100%;
+            height: 10vh;
+            background-color: $orange-500;
+            border: none;
+            color: $white;
+            border-radius: 5px;
+            cursor: pointer;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            font-size: 2.5vh;
+        }
+    }
+
+    .info {
+        width: 40vw;
+        height: 20vh;
+        display: flex;
+        flex-direction: column;
+        align-items: start;
+        justify-content: start;
+        padding: 2vw;
+        cursor: default;
+        gap: 2vh;
+
+        .timeBlock {
+            width: 100%;
+            display: flex;
+            align-items: start;
+            justify-content: space-between;
+
+            .time {
+                display: flex;
+                flex-direction: column;
+                font-size: 5vh;
+            }
+
+            .line {
+                color: $bg-slate-300;
+                width: 15vw;
+                border-bottom: 2px solid $bg-slate-300;
+                text-align: center;
+                position: relative;
+
+                .triangle {
+                    bottom: -1vh;
+                    right: -.5vw;
+                    position: absolute;
+                    width: 0;
+                    height: 0;
+                    border-top: 1vh solid transparent;
+                    border-bottom: 1vh solid transparent;
+                    border-left: 2vh solid $bg-slate-300;
+                }
+            }
+        }
+
+        .data {
+            width: 33vw;
+            display: flex;
+            align-items: start;
+            justify-content: space-between;
+
+            .container {
+                display: flex;
+                flex-direction: column;
+
+                .date {
+                    color: $bg-slate-300;
+                }
+            }
+
+            .container:nth-child(2) {
+                align-items: end;
+            }
+
+            .bold {
+                font-weight: 500;
+            }
+        }
+    }
+}
